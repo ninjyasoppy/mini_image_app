@@ -1,5 +1,5 @@
 if (document.URL.match(/new/) || document.URL.match(/edit/)) {
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('turbolinks:load', function () {
     const ImageList = document.getElementById('image-list');
 
     const createImageHTML = (blob) => {
